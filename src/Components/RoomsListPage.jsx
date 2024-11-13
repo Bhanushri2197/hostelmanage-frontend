@@ -120,7 +120,7 @@ function RoomsListPage() {
                   Book Now
                 </button>
                 <div className="roomPrice">
-                  <span className="priceValue">${room.price}</span>
+                  <span className="priceValue">INR {room.price}</span>
                   <span className='d-block'>/night</span>
                 </div>
               </div>
