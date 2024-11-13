@@ -12,7 +12,7 @@
 .firstFold .description{
     text-align: center;
     margin: 40px 0 100px;
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     filter: drop-shadow(3px 4px 2px black);
 }
@@ -23,13 +23,13 @@
 .headingMain{
     color: #fff;
     filter: drop-shadow(2px 4px 6px black);
-    font-size: 52px;
+    font-size: 40px;
     letter-spacing: 2.5px;
 }
 .bookingAvailable{
     box-shadow: 0px 0px 30px 0px rgba(35, 87.00000000000004, 132, 0.06);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 30px 30px 30px 30px;
+    padding: 20px;
     z-index: 1;
     background: #fff;
     border-radius:8px;
@@ -70,17 +70,17 @@
  }
  .bookingGroup .inputlabel{
     line-height: 1.25em;
-    font-size: 25px;
+    font-size: 19px;
     padding-bottom: 5px;
-    letter-spacing: 0.2px;
+    letter-spacing: .2px;
     word-spacing: 2px;
     font-weight: 500;
     display: block;
     
  }
  .bookingGroup .inputForm{
-    font-size: 20px;
-    padding: 15px 10px;
+    font-size: 18px;
+    padding: 8px 10px;
     border: 0;
     border-bottom: 1px solid #ccc;
     width: 100%;
@@ -89,8 +89,8 @@
   outline: none;
  }
  .bookingGroup .bookBtn{
-    font-size: 21px;
-    padding: 15px 45px;
+    font-size: 18px;
+    padding: 12px 45px;
  }
 .facilityBlock{
     padding: 120px 10px 80px;
@@ -136,7 +136,7 @@
 }
 .facilityItems .facilityTitle{
     margin-top: 15px;
-    font-size: 23px;
+    font-size: 19px;
     letter-spacing: 1.1px;
     text-transform: uppercase;
     transition: all .3s ease;
@@ -144,7 +144,7 @@
 .facilityItems .facilityDescription{
     margin-top: 15px;
     color: #9b9b9b;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.2px;
 }
 .bookingDirectBlock{

@@ -33,7 +33,7 @@
 .unitRight .heading5{
     font-weight: 400;
     letter-spacing: .075em;
-    font-size: 24px;
+    font-size: 21px;
 }
 .unitRight .descrip{
     letter-spacing: .025em;
@@ -46,7 +46,7 @@
 }
 .facility{
     flex-wrap: wrap;
-    margin: 20px 0 10px;
+    margin: 12px 0 10px;
 }
 .facility .falicityItem{
     width: 50%;
@@ -72,7 +72,7 @@
     padding: 10px 25px 6px;
     top: 0;
     right: 0;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1;
     font-weight: 300;
     letter-spacing: .025em;
@@ -103,8 +103,8 @@
     color: #444349;
 }
 .availabilityBlock {
-    margin-top: 30px;
-    font-size: 19px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 
@@ -118,7 +118,7 @@
     .unitLeft {
     }
     .roomListBlock .unitRight{
-        padding: 30px 50px 30px;
+        padding: 30px 25px;
     }
     
     @supports (object-fit: cover) {

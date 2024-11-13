@@ -5,14 +5,14 @@
     overflow: hidden;
 }
 .footerBlock .logoBlock{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 .footerBlock .logoBlock img{
  width: 60px;
 }
 .footerBlock .description{
-    font-size: 18px;
+    font-size: 15px;
     color: #ececec;
     letter-spacing: 0.7px;
 }
@@ -28,8 +28,8 @@
     list-style: none;
 }
 .footerBlock .linkDirect li{
-    padding: 12px 0;
-    font-size: 18px;
+    padding: 10px 0;
+    font-size: 16px;
 }
 .footerBlock .linkDirect li .arrow{
     margin: 5px 15px;
@@ -67,11 +67,11 @@
     border-color: #b0d135;
 }
 .footerBlock .contactContent {
-    font-size: 17px;
-    padding: 10px 0;
+    font-size: 15px;
+    padding: 8px 0;
 }
 .footerBlock .contactContent img{
-    width: 30px;
+    width: 20px;
     margin-right: 12px;
 }
 .footerBlock .footerBottom{

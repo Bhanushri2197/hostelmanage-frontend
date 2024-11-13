@@ -147,7 +147,7 @@ function ProfilePage() {
                 </span>
               </div>
               {formik.values.role !== 'staff' && (
-                <div className='formBlock p-2 position-relative'>
+                <div className='formBlock px-4  position-relative'>
                   <label htmlFor="roomNo">Your Room Number</label>
                   <input
                     className='inputForm'
