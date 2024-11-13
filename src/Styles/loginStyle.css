@@ -1,0 +1,58 @@
+.loginPageBlock{
+    background: url(../assets/image/hotelRoom1.jpeg);
+    min-height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loginPageBlock .loginContent{
+    background: #dddcdca1;
+    min-height: calc(100vh - 80px);
+    padding: 1px;
+}
+.loginPageBlock .loginInnerBlock{
+    width: 60%;
+    margin: 70px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #dcf483;
+    overflow: hidden;
+}
+.leftBlock .description{
+    color: #929292;
+    font-size: 14px;
+    line-height: 19px;
+}
+.leftBlock .logoBlock .logoImg{
+    width: 40px;
+}
+.loginPageBlock .rightBlock{
+    padding: 20px;
+    background: #fff8f0;
+}
+.rightBlock .formBlock{
+    margin-top: 10px;
+}
+.rightBlock .formBlock label{
+    display: block;
+    margin-bottom: 3px;
+    color: #ae755f;
+    font-weight: 500;
+}
+.rightBlock .formBlock .inputForm{
+    width: 100%;
+    border: 1px solid #dedede;
+    outline: 0;
+    padding: 10px 12px;
+    box-shadow: 0 1px 7px #e9e9e9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.rightBlock .errorMsg{
+    font-size: 11px;
+    color: #ff5555;
+    font-weight: 500;
+    margin-left: 12px;
+    position: absolute;
+    bottom: -5px;
+    display: block;
+}

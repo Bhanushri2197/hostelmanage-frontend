@@ -1,0 +1,44 @@
+.adminDashboardPage{
+    min-height: calc(100vh - 300px);
+}
+.adminDashboardPage .sideBar{
+    width: 250px;
+    background: #0b2f39;
+    box-shadow: 0 1px 8px #303030;
+    padding: 70px 20px;
+    color: #fff;
+}
+.sideBar .navLinks{
+    display: block;
+    padding: 10px 0 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #eaeaea;
+    position: relative;
+    transition: all .2s ease;
+}
+.sideBar .navLinks.active,.sideBar .navLinks:hover{
+    transform: translateX(5px);
+    color: #b0d135;
+}
+.sideBar .navLinks::after{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 10px;
+    border-color: #fff;
+    transform: rotate(-45deg);
+}
+.sideBar .navLinks.active::after,.sideBar .navLinks:hover::after{
+    border-color: #b0d135;
+}
+.mainContentBlock{
+    padding: 90px 0;
+}

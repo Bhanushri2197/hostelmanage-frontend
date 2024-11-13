@@ -1,0 +1,139 @@
+.roomListBlock{
+    background: #fff;
+    padding: 70px 0;
+}
+.roomsListedBlock{
+    margin-top: 50px;
+}
+.roomListBlock .roomUnit{
+    border: 1px solid #e1e1e1;
+    margin-bottom: 50px;
+   
+}
+.roomListBlock .roomUnit:hover  .roomImg{
+    transform: scale(1);
+}
+.roomListBlock .unitLeft{
+    width: 40%;
+    flex: 0 0 auto;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.roomListBlock .unitRight{
+    width: 60%;
+    padding: 30px;
+}
+.roomListBlock .roomImg{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+.unitRight .heading5{
+    font-weight: 400;
+    letter-spacing: .075em;
+    font-size: 24px;
+}
+.unitRight .descrip{
+    letter-spacing: .025em;
+    color: #4b4b4b;
+    margin-top: 25px;
+}
+.imgTable{
+    word-break: break-all;
+    width: 300px;
+}
+.facility{
+    flex-wrap: wrap;
+    margin: 20px 0 10px;
+}
+.facility .falicityItem{
+    width: 50%;
+    margin: 10px 0;
+}
+.facility .imgBlock{
+     
+    margin-right: 15px;
+}
+.facility .facilityImg{
+    min-width: 40px;
+    width: 40px;
+    
+}
+
+.facility .facilityName{
+    color: #787878;
+}
+.roomPrice{
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 25px 6px;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgba(68, 67, 73, 0.4);
+    background: transparent;
+    z-index: 1;
+}
+.roomPrice::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 24px;
+    width: 400%;
+    height: 100%;
+    background: #ffce40;
+    transform: skew(45deg);
+    transform-origin: 50% 100%;
+    will-change: transform;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.roomPrice .priceValue{
+    font-size: 1.5em;
+    letter-spacing: .025em;
+    color: #444349;
+}
+.availabilityBlock {
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+
+.availabilityBlock .title{
+    color: #b5b5b5;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+@media (min-width: 992px) {
+    .unitLeft {
+    }
+    .roomListBlock .unitRight{
+        padding: 30px 50px 30px;
+    }
+    
+    @supports (object-fit: cover) {
+        .desktop .product-big-figure img {
+            transform: scale(1.1);
+        }
+    }
+}
+@media (min-width: 768px) {
+    .unitLeft {
+    }
+    @supports (object-fit: cover) {
+        .roomImg {
+        
+        }
+    }
+}
+   

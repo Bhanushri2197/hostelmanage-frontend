@@ -1,0 +1,48 @@
+.complainPage{
+    min-height: calc(100vh - 457px);
+    padding: 100px 20px;
+}
+.complainsList{
+    margin-top: 80px;
+}
+.complainsList .complainItems{
+    background: #ffffff;
+    padding: 1px;
+    margin: 20px;
+    box-shadow: 0 1px 7px #d2d2d2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 450px;
+}
+.complainsList .status{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background: #ffdeae;
+    font-weight: 500;
+    font-size: 17px;
+}
+.complainsList .status.complete{
+    background: #c6ffc6;
+}
+.complainsList .innerContent{
+    padding: 20px;
+    height: calc(100% - 45px);
+}
+.complainsList .innerContent .heading5{
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+.complainsList .innerContent .createdDate{
+    font-size: 15px;
+    color: #acacac;
+}
+.complainsList .innerContent .description{ 
+    margin: 20px 0;
+    font-size: 19px; 
+}
+.addComplainBtn{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 25px;
+}

@@ -1,0 +1,130 @@
+.footerBlock{
+    padding: 50px 0 0;
+    background: #144f5f;
+    color: #fff;
+    overflow: hidden;
+}
+.footerBlock .logoBlock{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.footerBlock .logoBlock img{
+ width: 60px;
+}
+.footerBlock .description{
+    font-size: 18px;
+    color: #ececec;
+    letter-spacing: 0.7px;
+}
+.footerBlock .innerContent{
+    padding-top: 15px;
+}
+.footerBlock .heading5{
+    font-size: 21px;
+    margin-bottom: 35px;
+}
+.footerBlock .linkDirect{
+    padding-left: 0;
+    list-style: none;
+}
+.footerBlock .linkDirect li{
+    padding: 12px 0;
+    font-size: 18px;
+}
+.footerBlock .linkDirect li .arrow{
+    margin: 5px 15px;
+    display: inline-block;
+    height: 12px;
+    transform: rotate(315deg);
+    position: relative;
+    width: 12px;
+}
+.footerBlock .linkDirect li .arrow::after{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 12px;
+    border-color: #fff;
+}
+.footerBlock .linkDirect li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.footerBlock .linkDirect li a:hover {
+    color: #b0d135 ;
+    transform: translateX(4px);
+    display: block;
+}
+.footerBlock .linkDirect li a:hover .arrow::after{
+    border-color: #b0d135;
+}
+.footerBlock .contactContent {
+    font-size: 17px;
+    padding: 10px 0;
+}
+.footerBlock .contactContent img{
+    width: 30px;
+    margin-right: 12px;
+}
+.footerBlock .footerBottom{
+    padding: 20px;
+    background: #103a45;
+}
+.slideInRight{
+    visibility: visible;
+    animation-duration: 1.25s;
+    animation-name: slideInRight;
+}
+.slideInLeft{
+    visibility: visible;
+    animation-duration: 1.25s;
+    animation-name: slideInRight;
+}
+.slideInDown{
+    visibility: visible;
+    animation-duration: 1.25s;
+    animation-name: slideInDown;
+}
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }  
+}
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

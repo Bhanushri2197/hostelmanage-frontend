@@ -1,0 +1,65 @@
+.bodyInnerContent{
+    padding-top: 80px;
+}
+.heading1{
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #073643, #CDDC39);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading2{
+    display: inline-block;
+    background-image: linear-gradient(to right, #7CB342 40%, #050A58 60%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+}
+.btnPrimary{
+    background: #073643;
+    border: 3px solid #cce17b;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+.btnPrimary:hover,.btnPrimary:active{
+ box-shadow: 0 1px 6px #cce17b;
+ border: 3px solid #cce17b;
+ color: #fff;
+ transform: scale(1.05);
+ background: #718c93;
+}
+.btnLg{
+    font-size: 17px;
+}
+.deleteBtn{
+    background: #df1f1f;
+    border: 3px solid #fff;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .2s ease;  
+}
+.deleteBtn:hover,.deleteBtn:active{
+    border: 3px solid #e32601;
+    color: #e32601;
+    background: #fff;
+}
+.editBtn{
+    background: #8c8c8c;
+    border: 3px solid #fff;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .2s ease;  
+}
+.editBtn:hover,.editBtn:active{
+    border: 3px solid #5c5c5c;
+    color: #4f4f4f;
+    background: #fff;
+}

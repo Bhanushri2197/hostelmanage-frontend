@@ -1,0 +1,124 @@
+.navbar{
+    height: 80px;
+    box-shadow: 0 1px 10px #d7d7d7;
+    position: fixed;
+    width: 100%;
+    background: #ffff;
+    z-index: 2;
+}
+.navbar .navbar-brand img{
+    height: 55px;
+}
+.navbar .profileBlock .profileImg{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar .navLinks{
+    padding: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+    letter-spacing: 0.7px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navbar .navLinks:hover,.navbar .navLinks.active{
+    color: #b0d135;  
+}
+.navbar .navLinks:hover::after , .navbar .navLinks.active::after{
+    color: #b0d135;
+    border-top: 5px solid #b0d135;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.logOutBtn{
+    border: 2px solid transparent;
+    background: #dff199;
+    color: #363636;
+    margin: 0 12px;
+}
+.loggedprofile{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b00b3;
+    border-radius: 50%;
+    border: 3px solid grey;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+.logOutBtn:hover{
+    border: 2px solid red;
+}
+.notificationBlock .notificatonBtn{
+    border: 1px solid #bbbbbb;
+    background: #fff;
+    border-radius: 25px;
+    width: 35px;
+    height: 35px;
+}
+.notificationBlock .notifyImg{
+    width: 20px;
+}
+.notificationBlock .notifyDot{
+    width: 12px;
+    height: 12px;
+    background: #b0d135;
+    position: absolute;
+    border-radius: 50%;
+    right: -1px;
+    top: 0px;
+}
+
+.notifyDropdown{
+    width: 320px;
+    right: 10%;
+    left: unset !important;
+    background: #fff8ff;
+    box-shadow: 0 3px 9px #e0e0e0;
+    border-color: #e6e6e6;
+    border-radius: 8px;
+    padding: 0;
+}
+.notifyDropdown .dropdownList{
+    font-size: 15px;
+    color: grey;
+    padding: 20px 12px;
+    border-bottom: 3px solid #f4e2ff;
+}
+.notifyDropdown .title{
+    font-size: 21px;
+    padding: 10px;
+    background: #D1C4E9;
+}
+.notifyDropdown .dropdrownUl{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+}
+.dropdrownUl::-webkit-scrollbar {
+    width: 6px;
+  }
+  .dropdrownUl::-webkit-scrollbar-track {
+    background: rgb(186, 145, 186);
+  }
+  .dropdrownUl::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 240, 255);
+    border-radius: 6px;
+    border: 3px solid rgb(92, 23, 92);
+  }
