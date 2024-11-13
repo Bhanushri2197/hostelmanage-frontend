@@ -7,7 +7,7 @@ function HomePageFirst() {
 
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/rooms/rooms');
+      const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms');
       setRooms(response.data);
 
       // Set the initial value of the room field to the first room title, if rooms are available
@@ -48,7 +48,7 @@ function HomePageFirst() {
     },
     onSubmit: async (values, actions) => {
       try {
-        let res = await axios.post('http://localhost:4000/booking/booking-request', values);
+        let res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/booking/booking-request', values);
         if (res.status === 200) {
           actions.resetForm();
           alert('Booking request has been sent successfully,We will conform your request through email,Thank you.');

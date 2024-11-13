@@ -10,7 +10,7 @@ function PaymentPage() {
 
     const getData = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/rooms/rooms');
+            const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms');
             setRooms(response.data);
 
             if (response.data.length > 0) {
@@ -43,7 +43,7 @@ function PaymentPage() {
         };
 
         try {
-            const res = await axios.post("http://localhost:4000/payment/bill", body, {
+            const res = await axios.post("https://hostelmanagement-backend-nbv7.onrender.com/payment/bill", body, {
                 headers: { "Content-Type": "application/json" }
             });
             if (res.status === 200) {
@@ -93,7 +93,7 @@ function PaymentPage() {
         },
         onSubmit: async (values, actions) => {
             try {
-                let res = await axios.post('http://localhost:4000/payment/bill', values);
+                let res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/payment/bill', values);
                 if (res.status === 200) {
                     actions.resetForm();
                     alert('Booking request sent successfully. We will confirm your request via email. Thank you.');

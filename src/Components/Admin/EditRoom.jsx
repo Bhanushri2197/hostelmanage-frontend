@@ -18,7 +18,7 @@ function EditRoom() {
     useEffect(() => {
         const fetchRoomData = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/rooms/rooms/${_id}`);
+                const response = await axios.get(`https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms/${_id}`);
                 const room = response.data;
                 console.log(room)
                 setInitialValues({
@@ -47,7 +47,7 @@ function EditRoom() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.put(`http://localhost:4000/rooms/rooms/${_id}`, values);
+                await axios.put(`https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms/${_id}`, values);
                 navigate("/rooms"); // Navigate to rooms list after update
             } catch (error) {
                 console.error("Error updating room:", error);

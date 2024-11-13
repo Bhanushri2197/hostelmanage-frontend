@@ -11,7 +11,7 @@ function AdminComplain() {
 
   const getComplains = async () => {
     try {
-      const complainsRes = await axios.get("http://localhost:4000/complains/complain");
+      const complainsRes = await axios.get("https://hostelmanagement-backend-nbv7.onrender.com/complains/complain");
       setComplains(complainsRes.data);
     } catch (error) {
       console.log(error);
@@ -21,7 +21,7 @@ function AdminComplain() {
   const handleDelete = (_id) => {
     let confirmDelete = confirm("Are you sure you want to delete this complain?");
     if (confirmDelete) {
-      axios.delete(`http://localhost:4000/complains/complain/${_id}`)
+      axios.delete(`https://hostelmanagement-backend-nbv7.onrender.com/complains/complain/${_id}`)
         .then(() => {
           setComplains(complains.filter((complain) => complain._id !== _id));
         })
@@ -34,7 +34,7 @@ function AdminComplain() {
   const handleEdit = async (id) => {
     setEditingComplainId(id); // Set the ID of the complain being edited
     try {
-      const staff = await axios.get("http://localhost:4000/authentication/users");
+      const staff = await axios.get("https://hostelmanagement-backend-nbv7.onrender.com/authentication/users");
       const staffList = staff.data.filter(user => user.role === 'staff'); // Filter only staff users
       setAssignee(staffList);
     } catch (error) {
@@ -53,7 +53,7 @@ function AdminComplain() {
 
     try {
       // Update the complain with the staff name instead of ID
-      await axios.put(`http://localhost:4000/complains/complain/${complainId}`, { assignee: selectedStaffObj.name });
+      await axios.put(`https://hostelmanagement-backend-nbv7.onrender.com/complains/complain/${complainId}`, { assignee: selectedStaffObj.name });
       alert('Staff assigned successfully');
       getComplains(); // Refresh the complains list
       setEditingComplainId(null); // Reset the editing state

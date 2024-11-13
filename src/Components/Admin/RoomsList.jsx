@@ -9,7 +9,7 @@ function RoomsList() {
 
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/rooms/rooms');
+      const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms');
       setRooms(response.data);
     } catch (err) {
       console.error(err);
@@ -20,7 +20,7 @@ function RoomsList() {
     let confirmDelete = confirm("Are you sure you want to delete this Room details?");
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:4000/rooms/rooms/${_id}`)
+        .delete(`https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms/${_id}`)
         .then(() => {
           setRooms(rooms.filter((room) => room._id !== _id));
         })

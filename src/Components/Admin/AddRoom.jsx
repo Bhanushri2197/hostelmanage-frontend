@@ -55,7 +55,7 @@ function AddRoom() {
     },
     onSubmit: async (values, actions) => {
       try {
-        const res = await axios.post('http://localhost:4000/rooms/rooms', values); // Send all form data
+        const res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms', values); // Send all form data
         await new Promise((resolve) => setTimeout(resolve, 1000));
         actions.resetForm();
         console.log(res);

@@ -22,7 +22,7 @@ function LoginPage({ setUser }) {
         },
         onSubmit: async (values) => {
             try {
-                let res = await axios.post('http://localhost:4000/authentication/log-in', values);
+                let res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/authentication/log-in', values);
                 if (res.status === 200) {
                     const userData = res.data.user;
                     setUser(userData);  // Set global user state

@@ -29,7 +29,7 @@ function SignInPage() {
         },
         onSubmit: async (values) => {
             try {
-                let res = await axios.post('http://localhost:4000/authentication/sign-in', values);
+                let res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/authentication/sign-in', values);
                 if (res.status === 201) {
                     alert("Sign-up successful! Redirecting to login.");
                     navigate("/login");

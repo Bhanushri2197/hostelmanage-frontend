@@ -26,7 +26,7 @@ function RoomsListPage() {
 
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/rooms/rooms');
+      const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/rooms/rooms');
       setRooms(response.data);
     } catch (err) {
       console.error(err);
@@ -64,7 +64,7 @@ function RoomsListPage() {
       values.rooms = selectedRoom ? selectedRoom.roomTitle : '';
 
       try {
-        const res = await axios.post('http://localhost:4000/booking/booking-request', values);
+        const res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/booking/booking-request', values);
         if (res.status === 200) {
           actions.resetForm();
           alert('Booking request sent successfully. We will confirm your request through email. Thank you.');

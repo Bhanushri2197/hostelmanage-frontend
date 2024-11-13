@@ -17,7 +17,7 @@ function Notification() {
 
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/notifications/notification');
+      const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/notifications/notification');
       setNotification(response.data);
     } catch (err) {
       console.error(err);
@@ -30,7 +30,7 @@ function Notification() {
     let confirmDelete = confirm("Are you sure you want to delete this Notifications?");
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:4000/notifications/notification/${_id}`)
+        .delete(`https://hostelmanagement-backend-nbv7.onrender.com/notifications/notification/${_id}`)
         .then(() => {
           setNotification(notifications.filter((notification) => notification._id !== _id));
         })
@@ -52,7 +52,7 @@ function Notification() {
         },
         onSubmit : async(values,actions) => {
           try {
-            const res = await axios.post('http://localhost:4000/notifications/notification', values); // Send all form data
+            const res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/notifications/notification', values); // Send all form data
             await new Promise((resolve) => setTimeout(resolve, 1000));
             actions.resetForm();
             setShow(false);

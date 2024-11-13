@@ -33,7 +33,7 @@ function AddComplain() {
         onSubmit: async (values, actions) => {
             try {
                 console.log(values); // Check if status is included in the form values
-                let res = await axios.post('http://localhost:4000/complains/add-complain', values); // Post to backend
+                let res = await axios.post('https://hostelmanagement-backend-nbv7.onrender.com/complains/add-complain', values); // Post to backend
                 await new Promise((response) => setTimeout(response, 1000));
                 actions.resetForm();
                 if (res.status === 200) {

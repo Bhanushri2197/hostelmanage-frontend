@@ -12,7 +12,7 @@ function ProfilePage() {
 
   const getComplains = async () => {
     try {
-      const complainsRes = await axios.get("http://localhost:4000/complains/complain");
+      const complainsRes = await axios.get("https://hostelmanagement-backend-nbv7.onrender.com/complains/complain");
       if (user && user.name) {
         const assignedComplains = complainsRes.data.filter(complain => complain.assignee === user.name);
         setComplains(assignedComplains);
@@ -37,7 +37,7 @@ function ProfilePage() {
     if (_id) {
       const fetchUserData = async () => {
         try {
-          const response = await axios.get(`http://localhost:4000/authentication/users/${_id}`);
+          const response = await axios.get(`https://hostelmanagement-backend-nbv7.onrender.com/authentication/users/${_id}`);
           const user = response.data;
           setInitialValues({
             name: user.name,
@@ -60,7 +60,7 @@ function ProfilePage() {
   const handleStatus = async (_id) => {
     try {
       const updatedStatus = { status: "Completed" };
-      await axios.put(`http://localhost:4000/complains/complain/${_id}`, updatedStatus);
+      await axios.put(`https://hostelmanagement-backend-nbv7.onrender.com/complains/complain/${_id}`, updatedStatus);
       getComplains();
     } catch (error) {
       console.error("Error updating complain:", error);
@@ -80,7 +80,7 @@ function ProfilePage() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.put(`http://localhost:4000/authentication/users/${_id}`, values);
+        await axios.put(`https://hostelmanagement-backend-nbv7.onrender.com/authentication/users/${_id}`, values);
         alert("Profile updated successfully");
       } catch (error) {
         console.error("Error updating profile:", error);

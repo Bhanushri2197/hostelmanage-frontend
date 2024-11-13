@@ -10,7 +10,7 @@ function ComplainPage() {
 
   const getComplains = async () => {
     try {
-      const complainsRes = await axios.get("http://localhost:4000/complains/complain");
+      const complainsRes = await axios.get("https://hostelmanagement-backend-nbv7.onrender.com/complains/complain");
       if (user && user.email) {
         // Filter complaints to only show those created by the logged-in user
         const userComplains = complainsRes.data.filter(complain => complain.email === user.email);
@@ -28,7 +28,7 @@ function ComplainPage() {
     let confirmDelete = confirm("Are you sure you want to delete this complain?");
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:4000/complains/complain/${_id}`)
+        .delete(`https://hostelmanagement-backend-nbv7.onrender.com/complains/complain/${_id}`)
         .then(() => {
           setComplains(complains.filter((complain) => complain._id !== _id));
         })

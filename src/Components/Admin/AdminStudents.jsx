@@ -8,7 +8,7 @@ function AdminStudents() {
 
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/authentication/users');
+      const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/authentication/users');
       setUsers(response.data);
     } catch (err) {
       console.error(err);
@@ -19,7 +19,7 @@ function AdminStudents() {
     let confirmDelete = window.confirm("Are you sure you want to delete this request?");
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:4000/authentication/users/${_id}`)
+        .delete(`https://hostelmanagement-backend-nbv7.onrender.com/authentication/users/${_id}`)
         .then(() => {
           setUsers(users.filter((req) => req._id !== _id));
         })

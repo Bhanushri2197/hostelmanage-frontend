@@ -9,7 +9,7 @@ function BookingRequest() {
 
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/booking/booking-request');
+      const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/booking/booking-request');
       setbooking(response.data);
     } catch (err) {
       console.error(err);
@@ -20,7 +20,7 @@ function BookingRequest() {
     let confirmDelete = confirm("Are you sure you want to delete this Request?");
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:4000/booking/booking-request/${_id}`)
+        .delete(`https://hostelmanagement-backend-nbv7.onrender.com/booking/booking-request/${_id}`)
         .then(() => {
           setbooking(bookings.filter((req) => req._id !== _id));
         })
@@ -32,7 +32,7 @@ function BookingRequest() {
   const acceptRequest = async (_id) => {
       try {
          const updatedStatus = {status : "Accepted"}
-          await axios.put(`http://localhost:4000/booking/booking-request/${_id}`,  updatedStatus);
+          await axios.put(`https://hostelmanagement-backend-nbv7.onrender.com/booking/booking-request/${_id}`,  updatedStatus);
           getData()
       } catch (error) {
           console.error("Error updating room:", error);

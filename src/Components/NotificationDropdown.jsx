@@ -7,7 +7,7 @@ function NotificationDropdown() {
 
     const getData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/notifications/notification');
+        const response = await axios.get('https://hostelmanagement-backend-nbv7.onrender.com/notifications/notification');
         setNotify(response.data);
       
       } catch (err) {
