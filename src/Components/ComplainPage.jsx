@@ -54,7 +54,7 @@ function ComplainPage() {
           {complains.length > 0 ? (
             complains.map((complain, index) => (
               <div key={index} className="complainItems">
-                <span className='status'>{complain.status}</span>
+                <span className={`status ${complain.status === 'Completed' ? 'complete' : ''}`}>{complain.status}</span>
                 <div className="innerContent">
                   <div className="d-flex h-100 flex-column justify-content-between">
                     <div className="d-flex flex-column">
