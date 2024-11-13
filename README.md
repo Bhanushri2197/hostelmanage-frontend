@@ -35,6 +35,9 @@ Backend Code: [https://github.com/Bhanushri2197/hostelManagement-backend]
     Student Password: Bhanu123
 ````
 
+<img width="941" alt="image" src="https://github.com/user-attachments/assets/570fbe84-d56c-4112-9d6d-768efd161adf">
+
+
 
 #### Staff Interface:
 
@@ -59,6 +62,9 @@ Backend Code: [https://github.com/Bhanushri2197/hostelManagement-backend]
    Admin Username: admin@gmail.com
    Admin Password: Admin123
 `````
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/cf29cac1-03ba-4668-bd82-170316e5a4a1">
+
+
 
 
 ### Technologies Used
